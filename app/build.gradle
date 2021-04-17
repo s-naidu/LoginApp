@@ -5,7 +5,9 @@ plugins {
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
-
+    aaptOptions {
+        cruncherEnabled = false
+    }
     defaultConfig {
         applicationId "com.example.loginapp"
         minSdkVersion 16
