@@ -23,10 +23,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Name"
+        android:hint="@string/name"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="99dp" />
+        tools:layout_editor_absoluteY="99dp"
+        tools:ignore="MissingConstraints"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -35,7 +37,9 @@
         android:ems="10"
         android:inputType="textPassword"
         tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="163dp" />
+        tools:layout_editor_absoluteY="163dp"
+        tools:ignore="LabelFor,MissingConstraints"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/button"
@@ -43,14 +47,16 @@
         android:layout_height="wrap_content"
         android:text="Login"
         tools:layout_editor_absoluteX="210dp"
-        tools:layout_editor_absoluteY="230dp" />
+        tools:layout_editor_absoluteY="230dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="no of incorrect attempts"
+        android:text="@string/no_of_incorrect_attempts"
         tools:layout_editor_absoluteX="210dp"
-        tools:layout_editor_absoluteY="295dp" />
+        tools:layout_editor_absoluteY="295dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
